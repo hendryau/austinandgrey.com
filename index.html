@@ -10,16 +10,153 @@
 body {
 	background-color: #6f9349;
 }
-h1 {
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 25px;
-	text-align: center;
+
+h1,p {
 	color: #fcffe5;
-	margin-top: 10%;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+	font-size: 50px;
+	color: #fcffe5;
 	font-weight: normal;
 }
+
+p {
+	text-align: center;
+}
+
+.img-wrap img {
+	margin: 15px;
+}
+
+.img-wrap img {
+	transform: rotate(1.50deg);
+}
+.img-wrap:nth-child(even) img {
+	transform: rotate(357.5deg);
+}
+img {
+	border: 10px solid #577539;
+}
+
+a, a:visited {
+	color: #577539;
+}
+
+a:hover, a:visited:hover {
+	color: white; /*TODO*/
+}
+
+@media (min-width: 400px) {
+	img {
+		max-width: 350px;
+	}
+}
+
+.img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 </style>
 <body> 
-	<h1>Coming Soon.</h1>
+	<h1>Grey &amp; Austin</h1>
+
+	<p>After more than a decade together, Grey and Austin are finally making it official!</p>
+	<p>They will be married on Saturday, September 1st, 2018 in Ann Arbor, Michigan.</p>
+	<p>Formal invitations and RSVPs for the wedding will be sent out sometime in July.</p>
+	<p>The ceremony will take place at the Ann Arbor Zen Buddhist Temple, and will be officiated by Ven. Haju Sunim.</p>
+	<p>The reception will be held at <a href="http://www.webersinn.com/">Weber's</a>. If you are traveling and need a place to stay, please mention you are attending the Hendry/Cichy wedding for a discounted rate.</p>
+	<p>Questions, congratulations, and words of wisdom for the couple are welcome.  Please contact Austin (hendryau at gmail dot com) or Grey (cgracem at umich dot edu).</p>
+	<p>We can't wait to celebrate our love with all of you!</p> 
+
+	<div class="img-container">
+		<div class="img-wrap">
+			<img src="img/lake.jpg" alt="up north in 2008.">
+			<p>Right after we started dating. April 2008.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/driveway.jpg" alt="hanging out at sunset 2008" height="375">
+			<p>Bikeride at sunset. Summer 2008.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/halloween.jpg" alt="halloween 2009" width="500">
+			<p>Getting ready for Halloween. 2009.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/mackinac1.jpg" alt="arch rock mackinac island 2009" width="500">
+			<p>Arch Rock at Mackinac Island. 2009.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/mackinac2.jpg" alt="mackinac island beach at sunset" width="500">
+			<p>Mackinac Island beach at sunset. 2009.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/chicago.jpg" alt="chicago 2009" width="500">
+			<p>Trip to Chicago, 2009.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/dog.jpg" alt="with soda the dog">
+			<p>A good dog.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/ai.jpg" alt="anniversary dinner" height="400">
+			<p>Out for dinner 2010.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/nap.jpg" alt="taking a nap on the way home from michigan's adventure" width="500">
+			<p>Nap on the way back from Muskegon.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/grass.jpg">
+			<p>Enjoying a nice summer day.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/okinawa.png" alt="shuri castle in okinawa 2014" height="375">
+			<p>Outside Shuri Castle, Okinawa. 2014.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/sun.jpg" alt="knob hill back yard" height="375">
+			<p>Catchin' some rays. 2015.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/ball.jpg" alt="sportsball game" height="400">
+			<p>At a sportsball game. 2015.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/whoa.jpg" alt="2016" height="400">
+			<p>Hanging out at our place in Ann Arbor, 2016.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/dc.jpg" alt="2016" width="600">
+			<p>Out for a walk in D.C. 2017.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/cat.jpg" alt="2017" height="375">
+			<p>Family photo.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/zoo.jpg" alt="2017" height="400">
+			<p>Enjoying a nice summer day 2017.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/canoe.jpg" alt="2017" height="300">
+			<p>Austin tricked Grey into going canoeing.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/camp.jpg" alt="2017" height="300">
+			<p>They camped too.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/xmas.jpg" alt="holiday work party 2017">
+			<p>Holiday party at Austin's office, 2017.</p>
+		</div>
+	</div>
 </body>
 </html>
