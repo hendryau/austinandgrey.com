@@ -38,7 +38,9 @@ p {
 	transform: rotate(357.5deg);
 }
 img {
-	border: 10px solid #577539;
+	/*border: 10px solid #577539;*/
+	border-radius: 5%;
+	box-shadow: 5px 5px 10px black;
 }
 
 a, a:visited {
@@ -55,6 +57,11 @@ a:hover, a:visited:hover {
 	}
 }
 
+.txt-container {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
 .img-container {
 	display: flex;
 	justify-content: center;
@@ -67,15 +74,15 @@ a:hover, a:visited:hover {
 </style>
 <body> 
 	<h1>Grey &amp; Austin</h1>
-
-	<p>After more than a decade together, Grey and Austin are finally making it official!</p>
-	<p>They will be married on Saturday, September 1st, 2018 in Ann Arbor, Michigan.</p>
-	<p>Formal invitations and RSVPs for the wedding will be sent out sometime in July.</p>
-	<p>The ceremony will take place at the Ann Arbor Zen Buddhist Temple, and will be officiated by Ven. Haju Sunim.</p>
-	<p>The reception will be held at <a href="http://www.webersinn.com/">Weber's</a>. If you are traveling and need a place to stay, please mention you are attending the Hendry/Cichy wedding for a discounted rate.</p>
-	<p>Questions, congratulations, and words of wisdom for the couple are welcome.  Please contact Austin (hendryau at gmail dot com) or Grey (cgracem at umich dot edu).</p>
-	<p>We can't wait to celebrate our love with all of you!</p> 
-
+	<div class=txt-container>
+		<p>After more than a decade together, Grey and Austin are finally making it official!</p>
+		<p>They will be married on Saturday, September 1st, 2018 in Ann Arbor, Michigan.</p>
+		<p>Formal invitations and RSVPs for the wedding will be sent out sometime in July.</p>
+		<p>The ceremony will take place at the Ann Arbor Zen Buddhist Temple and will be officiated by Ven. Haju Sunim.</p>
+		<p>The reception will be held at <a href="http://www.webersinn.com/">Weber's Inn</a>. If you are traveling and need a place to stay, please mention you are attending the Hendry/Cichy wedding for a discounted rate.</p>
+		<p>Questions, congratulations, and words of wisdom for the couple are welcome.  Please contact Austin (hendryau at gmail dot com) or Grey (cgracem at umich dot edu).</p>
+		<p>We can't wait to celebrate our love with all of you!</p> 
+	</div>
 	<div class="img-container">
 		<div class="img-wrap">
 			<img src="img/lake.jpg" alt="up north in 2008.">
@@ -147,7 +154,7 @@ a:hover, a:visited:hover {
 		</div>
 		<div class="img-wrap">
 			<img src="img/canoe.jpg" alt="2017" height="300">
-			<p>Austin tricked Grey into going canoeing.</p>
+			<p>Austin tricked Grey into going on a canoe trip.</p>
 		</div>
 		<div class="img-wrap">
 			<img src="img/camp.jpg" alt="2017" height="300">
