@@ -23,14 +23,11 @@ h1 {
 	color: #fcffe5;
 	font-weight: normal;
 	display: inline-block;
+	margin-bottom: 0;
 }
 
 p {
 	text-align: center;
-}
-
-.img-wrap img {
-	margin: 15px;
 }
 
 .img-wrap img {
@@ -42,6 +39,16 @@ p {
 img {
 	border-radius: 5%;
 	box-shadow: 5px 5px 10px black;
+	max-height: 350px;
+	margin: 15px;
+}
+h1 img {
+	box-shadow: none;
+	border-radius: 0;
+	margin: 0;
+	height: 230px;
+}
+.img-container img {
 	max-height: 275px;
 }
 
@@ -57,7 +64,7 @@ a:hover {
 	body {
 		background-size: 40%;
 	}
-	img {
+	.img-container img {
 		max-width: 350px;
 	}
 	.txt-container {
@@ -69,12 +76,15 @@ a:hover {
 	body {
 		background-size: 90%;
 	}
-	img {
+	.img-container img {
 		max-width: 90%;
 	}
 	.txt-container {
 		margin-left: 10%;
 		margin-right: 10%;
+	}
+	.first-imgs img {
+		max-width: 150px;
 	}
 }
 
@@ -93,7 +103,11 @@ a:hover {
 
 </style>
 <body> 
-	<h1>Grey &amp; Austin</h1>
+	<h1><img src="img/wreath.png"><span hidden>Grey &amp; Austin</span></h1>
+	<div class="first-imgs">
+		<img src="img/engagement1.jpg">
+		<img src="img/engagement2.jpg">
+	</div>
 	<div class=txt-container>
 		<p>After more than a decade together, Grey and Austin are finally making it official!</p>
 		<p>They will be married on Saturday, September 1st, 2018 in Ann Arbor, Michigan.</p>
@@ -187,6 +201,10 @@ a:hover {
 		<div class="img-wrap">
 			<img src="img/xmas.jpg" alt="holiday work party 2017">
 			<p>Holiday party at Austin's office, 2017.</p>
+		</div>
+		<div class="img-wrap">
+			<img src="img/winter.jpg" alt="winter in northern MN">
+			<p>Hiking in Northern Minnesota.</p>
 		</div>
 		<div class="img-wrap">
 			<img src="img/hamlet.jpg" alt="hamlet at the rc">
